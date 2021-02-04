@@ -20,15 +20,19 @@
     var CONFIG = {"hostname":"daxiong365.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="大雄的公开课">
-<meta property="og:url" content="http://daxiong365.com/archives/2021/01/index.html">
+  <meta name="description" content="C语言贪吃蛇游戏程序教程 。编写C语言实现的，基于Windows的CMD命令行窗口的贪吃蛇游戏。逐步从原理、准备到上手，分布详解C语言贪吃蛇的编写过程。这一集是原理与准备篇。 源代码 - github.com&#x2F;daxiong365&#x2F;dx_snake Youtube  Bilibili">
+<meta property="og:type" content="article">
+<meta property="og:title" content="分步详解C语言贪吃蛇游戏-核心功能完成篇">
+<meta property="og:url" content="http://daxiong365.com/2021/02/03/snake-game-c-language-02/index.html">
 <meta property="og:site_name" content="大雄的公开课">
+<meta property="og:description" content="C语言贪吃蛇游戏程序教程 。编写C语言实现的，基于Windows的CMD命令行窗口的贪吃蛇游戏。逐步从原理、准备到上手，分布详解C语言贪吃蛇的编写过程。这一集是原理与准备篇。 源代码 - github.com&#x2F;daxiong365&#x2F;dx_snake Youtube  Bilibili">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-02-04T06:44:09.000Z">
+<meta property="article:modified_time" content="2021-02-04T07:16:36.741Z">
 <meta property="article:author" content="大雄">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://daxiong365.com/archives/2021/01/">
+<link rel="canonical" href="http://daxiong365.com/2021/02/03/snake-game-c-language-02/">
 
 
 <script id="page-configurations">
@@ -36,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | 大雄的公开课</title>
+  <title>分步详解C语言贪吃蛇游戏-核心功能完成篇 | 大雄的公开课</title>
   
 
 
@@ -139,70 +143,80 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 3 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://daxiong365.com/2021/02/03/snake-game-c-language-02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="大雄">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大雄的公开课">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          分步详解C语言贪吃蛇游戏-核心功能完成篇
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-02-03 22:44:09 / Modified: 23:16:36" itemprop="dateCreated datePublished" datetime="2021-02-03T22:44:09-08:00">2021-02-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+        <p>C语言贪吃蛇游戏程序教程 。<br>编写C语言实现的，基于Windows的CMD命令行窗口的贪吃蛇游戏。<br>逐步从原理、准备到上手，分布详解C语言贪吃蛇的编写过程。<br>这一集是原理与准备篇。</p>
+<p>源代码 - <a target="_blank" rel="noopener" href="https://github.com/daxiong365/dx_snake">github.com/daxiong365/dx_snake</a></p>
+<h3 id="Youtube"><a href="#Youtube" class="headerlink" title="Youtube"></a>Youtube</h3><iframe width="560" height="315" src="https://www.youtube.com/embed/NEZ8zjlYKsU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="Bilibili"><a href="#Bilibili" class="headerlink" title="Bilibili"></a>Bilibili</h3>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-01-16T15:55:03-08:00"
-              content="2021-01-16">
-          01-16
-        </time>
-      </div>
+      <footer class="post-footer">
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/01/16/snake-game-c-language-01/" itemprop="url">
-            <span itemprop="name">分步详解C语言贪吃蛇游戏 - 原理与准备篇</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-01-16T15:50:34-08:00"
-              content="2021-01-16">
-          01-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/01/16/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
+        
 
 
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/01/16/snake-game-c-language-01/" rel="prev" title="分步详解C语言贪吃蛇游戏 - 原理与准备篇">
+      <i class="fa fa-chevron-left"></i> 分步详解C语言贪吃蛇游戏 - 原理与准备篇
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-  </div>
+      </footer>
+    
+  </article>
   
   
-  
-
   
 
 
@@ -255,6 +269,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Youtube"><span class="nav-number">1.</span> <span class="nav-text">Youtube</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bilibili"><span class="nav-number">2.</span> <span class="nav-text">Bilibili</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
